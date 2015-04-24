@@ -119,7 +119,8 @@
           p:poolConfig-ref="ldapPoolConfig"
           p:blockWaitTime="${ldap.pool.blockWaitTime}"
           p:validator-ref="searchValidator"
-          p:pruneStrategy-ref="pruneStrategy" />
+          p:pruneStrategy-ref="pruneStrategy"
+          p:failFastInitialize="false" />
  
     <bean id="abstractConnectionConfig" abstract="true"
           class="org.ldaptive.ConnectionConfig"
